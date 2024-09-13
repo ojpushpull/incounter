@@ -28,8 +28,14 @@ export default class App extends React.Component {
     render () {
     return (
         <View style={styles.container}>
-        <Text> Open up and work neow! </Text>
+        <Text style={{P fontSize: 60, marginBottom: -20}}>  </Text>
+        <Text style={{P fontSize: 12, padding: 20}}>  </Text>
         <StatusBar style="auto" />
+        <View style={{flexDirection: 'row'}}>
+            <Button onPress={this.decrementValue} title="Decrease" />
+            <Text> </Text>
+            <Button onPress={this.incrementValue} title="Increase" />
+        </View>
         </View>
     );
     }
