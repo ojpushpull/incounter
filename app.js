@@ -28,8 +28,8 @@ export default class App extends React.Component {
     render () {
     return (
         <View style={styles.container}>
-        <Text style={{P fontSize: 60, marginBottom: -20}}>  </Text>
-        <Text style={{P fontSize: 12, padding: 20}}>  </Text>
+        <Text style={{ fontSize: 60, marginBottom: -20}}>  </Text>
+        <Text style={{ fontSize: 12, padding: 20}}>  </Text>
         <StatusBar style="auto" />
         <View style={{flexDirection: 'row'}}>
             <Button onPress={this.decrementValue} title="Decrease" />
