@@ -28,13 +28,13 @@ export default class App extends React.Component {
     render () {
     return (
         <View style={styles.container}>
-        <Text style={{ fontSize: 60, marginBottom: -20}}> {this.state.value} </Text>
+        <Text style={{ fontSize: 60, marginBottom: -20}}> 0 </Text>
         <Text style={{ fontSize: 12, padding: 20, color: 'grey'}}>Total Taps  </Text>
         <StatusBar style="auto" />
         <View style={{flexDirection: 'row'}}>
-            <Button onPress={this.decrementValue} title="Up" />
+            <Button onPress={this.decrementValue} title="Decrease" />
             <Text> </Text>
-            <Button onPress={this.incrementValue} title="Down" />
+            <Button onPress={this.incrementValue} title="Increase" />
         </View>
         </View>
     );
