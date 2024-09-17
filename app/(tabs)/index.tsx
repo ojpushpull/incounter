@@ -20,7 +20,7 @@ export default class App extends React.Component {
     decrementValue = () => {
         this.setState({
             value: this.state.value - 1,
-            total_taps: this.state.total_taps - 1
+            total_taps: this.state.total_taps + 1
         })
         console.log("Value: " + (this.state.value - 1))
     }
@@ -29,7 +29,7 @@ export default class App extends React.Component {
     return (
         <View style={styles.container}>
         <Text style={{ fontSize: 60, marginBottom: -20}}> {this.state.value} </Text>
-        <Text style={{ fontSize: 12, padding: 20, color: 'grey'}}>Total Taps  </Text>
+        <Text style={{ fontSize: 12, padding: 20, color: 'grey'}}>{"Total Taps" + this.state.total_taps}   </Text>
         <StatusBar style="auto" />
         <View style={{flexDirection: 'row'}}>
             <Button onPress={this.decrementValue} title="Up" />
